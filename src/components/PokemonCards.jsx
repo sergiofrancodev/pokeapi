@@ -19,6 +19,7 @@ const PokemonCards = ({pokemonUrl}) => {
 
  },[])
 
+console.log(infoPokemon);
     return (
         <div>
             <li onClick={() => navigate(`/pokedex/${infoPokemon.id}`)}>

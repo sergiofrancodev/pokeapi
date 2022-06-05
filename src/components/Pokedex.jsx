@@ -92,20 +92,18 @@ const Pokedex = () => {
 
             <div className='search-categories'>
 
-                <div><input
+                <div className='search-div'><input
                     type="text"
                     value={searchPokemon}
                     onChange={submit}
-                    placeholder="Search pokemon"
-
-                /><FontAwesomeIcon icon={faSearch} className="search-icon" />
+                    placeholder="Search pokemon" /><FontAwesomeIcon icon={faSearch} className="search-icon" />
                 </div>
 
 
-                <div>
+                <div className='filter-type-box'>
 
-                    <select onChange={filterTypes}>
-                     <option value={'https://pokeapi.co/api/v2/pokemon?offset=0&limit=1126'}>All pokemons</option>
+                    <select onChange={filterTypes} className="select-type">
+                     <option  value={'https://pokeapi.co/api/v2/pokemon?offset=0&limit=1126'}>All pokemons</option>
                         {typesPokemons.map((type) => (
 
                             <option value={type.url} key={type.url}>{type.name}</option>

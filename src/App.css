@@ -5,6 +5,27 @@
   font-family: 'Inter', sans-serif;
   
 }
+.stats-progressbar{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 5rem;
+  padding-top: 3rem;
+
+}
+
+.title-stats-progress{
+  display: flex;
+justify-content: space-between;
+}
+.stats-progressbar div > h3{
+  margin-bottom: 0.8rem;
+  font-family: 'Roboto';
+  font-weight: 500;
+ font-size: 22px;
+}
 
 html{
   height: 100%;
@@ -68,27 +89,42 @@ background: none;
 }
 
 .search-categories{
-display: grid;
-grid-template-columns: repeat(2, 1fr);
+display: flex;
 width: 80%;
-height: 4rem;
 margin: auto;
 margin-top: 2rem;
-justify-self: center;
+justify-content: space-between;
 align-items: center;
 
 }
-.search-categories > div > input {
+.search-div > input {
 
   padding: 1rem;
-  width: 50%;
+  width: 350px;
   margin-left: 2%;
   border: 1px solid gray;
   border-radius: 5px;
 
 }
+.search-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.filter-type-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.filter-type-box > select{
+  padding: 1rem;
+  width: 350px;
+  margin-left: 2%;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
 
 .contain{
   display: flex;
