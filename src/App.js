@@ -4,7 +4,7 @@ import UserLogin from './components/UserLogin'
 import PokemonDetails from './components/PokemonDetails';
 import Pokedex from './components/Pokedex';
 import ProtectedRoutes from './components/ProtectedRoutes';
-
+import './responsive.css'
 function App() {
  
 
